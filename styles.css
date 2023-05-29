@@ -4,27 +4,28 @@ body, html {
 }
 
 .top-bar {
-  background-color: #E6F5E9;
+  background-color: #000000;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
 }
 
 .top-bar a {
   float: left;
-  padding: 12px 20px;
+  padding: 22px 30px;
   text-decoration: none;
-  color: #333;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .top-bar a:hover {
-  background-color: #CDE7D2;
+  background-color: #808080;
+  color: rgb(0, 0, 0);
 }
 
 .top-bar a.active {
-  background-color: #5CB85C;
-  color: #fff;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /* Optional: Center the top bar items */
@@ -36,57 +37,55 @@ body, html {
 .top-bar a {
   margin: 0 10px;
 }
-/* .page-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding: 200px 0;
-  background-image: url(data/other/magnus-engo-mbXEkW5ZyBQ-unsplash.jpg); 
-  background-size: cover;
+/* title section */
+
+.landing-section {
+  display: flex;
+  height: 800px;
+  justify-content:baseline;
+  background: linear-gradient(black, black) 0% 0% / 100% 50%, linear-gradient(#acacac, #b4b4b4) 0% 100% / 100% 50%;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  position: relative;
+}
+
+.landing-content {
+  background-color:#000000;
+  width:fit-content;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 10%;
+  border-bottom-right-radius: 50%;
+}
+
+.landing-image {
+  background-image: url('data/other/Roey_renderv1.png');
+  background-size: cover;
+  background-position:40%;
+  flex: 1;
+  border-top-left-radius: 50%;
   overflow: hidden;
 }
 
-.page-title h1 {
-  color: #fff;
-}
-
-.page-title h1 span {
-  display: block;
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #fff;
-} */
-
-.page-title {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  padding: 200px 0;
-}
-
-.page-title h1 {
-  font-size: 2.9rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+.landing-title {
+  font-size: 36px;
   color: rgb(255, 255, 255);
 }
 
-.page-title .title-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(data/other/magnus-engo-mbXEkW5ZyBQ-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  z-index: -1;
+.landing-subtitle {
+  font-size: 26px;
+  color: #a7a7a7;
+  text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .sub-section {
   margin-bottom: 40px;
